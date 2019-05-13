@@ -1,3 +1,18 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:c603d1ba20045153610956e8442d31bbd80218a5e7ec3d4f8ef4faf786928d07
-size 414
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+	
+	<sitemap>
+	   	<loc>https://hamed.github.io/en/sitemap.xml</loc>
+		
+	   	<lastmod>2016-12-27T11:20:18+03:30</lastmod>
+		
+	</sitemap>
+	
+	<sitemap>
+	   	<loc>https://hamed.github.io/fa/sitemap.xml</loc>
+		
+	   	<lastmod>2017-12-29T13:13:35+03:30</lastmod>
+		
+	</sitemap>
+	
+</sitemapindex>

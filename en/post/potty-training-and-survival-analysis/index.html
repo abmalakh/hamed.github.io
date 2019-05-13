@@ -1,3 +1,367 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:1e1aa52f375b0e6c24bac53d1f414fff802f6f8b4ef2a4712734ab30da2f66e5
-size 9234
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Hardcore math and parenting">
+  <meta name="generator" content="Hugo 0.40.1" />
+
+  <title>Potty training and survival analysis &middot; playing with the black box</title>
+
+  
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/1.0.0/pure-min.css">
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/1.0.0/grids-responsive-old-ie-min.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/1.0.0/grids-responsive-min.css">
+  <!--<![endif]-->
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="https://hamed.github.io/css/side-menu-old-ie.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="https://hamed.github.io/css/side-menu.css">
+  <!--<![endif]-->
+
+  <link rel="stylesheet" href="https://hamed.github.io/css/blackburn.css">
+
+  
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  
+  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" type="text/css">
+
+  
+  
+
+  
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/androidstudio.min.css">
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  
+  <script>hljs.initHighlightingOnLoad();</script>
+  
+
+  <link rel="shortcut icon" href="https://hamed.github.io/img/favicon.ico" type="image/x-icon" />
+
+  
+  
+
+</head>
+
+
+<body>
+<div id="layout">
+
+  
+<a href="#menu" id="menuLink" class="menu-link">
+  
+  <span></span>
+</a>
+<div id="menu">
+
+  
+  <a class="pure-menu-heading brand" href="https://hamed.github.io/">BlackBox</a>
+
+
+  <div class="pure-menu">
+    <ul class="pure-menu-list">
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="https://hamed.github.io/post/"><i class='fa fa-list fa-fw'></i>Posts</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="https://hamed.github.io/categories/"><i class='fa fa-folder fa-fw'></i>Categories</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="https://hamed.github.io/fa/"><i class='fa fa-language fa-fw'></i>فارسی</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="https://hamed.github.io/"><i class='fa fa-home fa-fw'></i>home</a>
+      
+        </li>
+      
+    </ul>
+  </div>
+
+  <div class="pure-menu social">
+  <ul class="pure-menu-list">
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://twitter.com/allaei" target="_blank"><i class="fa fa-twitter-square fa-fw"></i>Twitter</a>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://instagram.com/hamed.allaei" target="_blank"><i class="fa fa-instagram fa-fw"></i>Instagram</a>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://github.com/hamed" target="_blank"><i class="fa fa-github-square fa-fw"></i>GitHub</a>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://t.me/hamed_allaei" target="_blank"><i class="fa fa-telegram fa-fw"></i>Telegram</a>
+    </li>
+    
+
+  </ul>
+</div>
+
+
+  <div>
+  <div class="small-print">
+    <small>&copy; 2016. All rights reserved.</small>
+  </div>
+  <div class="small-print">
+    <small>Built with&nbsp;<a href="https://gohugo.io/" target="_blank">Hugo</a></small>
+    <small>Theme&nbsp;<a href="https://github.com/yoshiharuyamashita/blackburn" target="_blank">Blackburn</a></small>
+  </div>
+</div>
+
+</div>
+
+
+  <div id="main">
+
+
+<div  lang=en >
+<div class="header">
+  <h1>Potty training and survival analysis</h1>
+  <h2>Hardcore math and parenting</h2>
+</div>
+<div class="content" align="justify">
+
+  <div class="post-meta" lang=en >
+<div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>27 Dec 2016, 11:20</time>
+  </div>
+
+  
+
+  
+  
+  
+  <div>
+    <i class="fa fa-folder fa-fw"></i>
+    
+    <a class="post-taxonomy-topic" href="https://hamed.github.io/en/categories/data-science">data-science</a>&nbsp;&#47;
+    
+    <a class="post-taxonomy-topic" href="https://hamed.github.io/en/categories/parenting">parenting</a>
+    
+  </div>
+  
+  
+
+  
+  
+  
+  
+
+</div>
+
+
+  <p>It is time to potty train the Little One (LO).
+The objective is to use Reinforcement Learning (RL) so the LO pisses in the toilet instead of his diaper.
+The idea of RL is to keep LO on his potty until he accidentally pisses into that.
+Then mommy and daddy are ecstatic, jumping up and down with enormous joy,
+giving him lots of kisses, stickers and chocolates.
+We need to repeat the process over and over again to reinforce the good behavior into the little cute tiny brain of LO.
+It is simple but it is not easy.
+Survival analysis might come handy.
+</p>
+
+<p>During the training, LO pisses on different parts and objects of the house,
+from mom’s favorite carpet to dad’s smart phone (False Negatives).
+If we want to avoid that,
+we have to wait endless hours in the bathroom until the LO gets fed up leaves with no result (False Positives).</p>
+
+<p>So, the objective is to minimize false positives and false negatives,
+spend less time in the toilet, and spend less time cleaning the house.</p>
+
+<p>Let P(t) be the probability of LO pissing during t and t+dt.
+This is not a uniform Probability Density Function (PDF).
+It depends on many parameters, like room temperature, water consumption and  sweating.
+It is even more complicated that that, P(t) depends on the history,
+it depends on what happened at before, the last time LO has pissed.
+Maybe we can use some survival analysis here.</p>
+
+<p>In survival analysis, we are interested in calculation of survival function S(t),
+the probability of LO keeping all the urine in his tiny bladder as long as t,
+given that he has already pissed at time t=0.
+So for example, in our case study we are confident that S(15 min) = 1 and S(4 hour)=0,
+for awake subject but for asleep subject, S(t) stays close one for as long as 12 hours.</p>
+
+<p>For awake subject, the half life is about 2 hours,
+half of the time he can keep his pajama dry as long as two hours.</p>
+
+<p>After a series of observations, we come to this conclusion:</p>
+
+<p><strong>First thing in the morning, put LO on his potty. In a couple of minutes, LO will fill both the potty and your cup of joy!</strong></p>
+
+<p><strong>Then, you are almost safe during next hour, at the end of first one hour, you give it a shot, then you will try half an hour later and a quarter later and then you leave LO on the potty until he pisses.</strong></p>
+
+<p>Have a good potty training! But be aware that the parameters of your LO might be different from ours!</p>
+
+<p><em>Originaly published on my <a href="https://www.linkedin.com/pulse/potty-training-data-scientists-way-hamed-seyed-allaei">Linkedin</a> page.</em></p>
+
+  
+<div class="prev-next-post pure-g">
+  <div class="pure-u-1-24" style="text-align: left;">
+    
+    <a href="https://hamed.github.io/en/post/hello-hugo/"><i class="fa fa-chevron-left"></i></a>
+    
+  </div>
+  <div class="pure-u-10-24">
+    
+    <nav class="prev">
+      <a href="https://hamed.github.io/en/post/hello-hugo/">Hello Hugo!</a>
+    </nav>
+    
+  </div>
+  <div class="pure-u-2-24">
+    &nbsp;
+  </div>
+  <div class="pure-u-10-24">
+    
+  </div>
+  <div class="pure-u-1-24" style="text-align: right;">
+    
+  </div>
+</div>
+
+
+
+  
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+
+(function() {
+    
+    
+    if (window.location.hostname == "localhost")
+        return;
+
+    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+    var disqus_shortname = 'hamed-github-io';
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com/" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+</div>
+</div>
+</div>
+</div>
+<script src="https://hamed.github.io/js/ui.js"></script>
+
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-385494-12', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+
+
+</body>
+</html>
+
