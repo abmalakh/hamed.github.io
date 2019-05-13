@@ -1,33 +1,3 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Categories on playing with the black box</title>
-    <link>https://hamed.github.io/en/categories/</link>
-    <description>Recent content in Categories on playing with the black box</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <copyright>&amp;copy; 2016. All rights reserved.</copyright>
-    
-	<atom:link href="https://hamed.github.io/en/categories/index.xml" rel="self" type="application/rss+xml" />
-    
-    
-    <item>
-      <title>Data Science</title>
-      <link>https://hamed.github.io/en/categories/data-science/</link>
-      <pubDate>Tue, 27 Dec 2016 11:20:18 +0330</pubDate>
-      
-      <guid>https://hamed.github.io/en/categories/data-science/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Parenting</title>
-      <link>https://hamed.github.io/en/categories/parenting/</link>
-      <pubDate>Tue, 27 Dec 2016 11:20:18 +0330</pubDate>
-      
-      <guid>https://hamed.github.io/en/categories/parenting/</guid>
-      <description></description>
-    </item>
-    
-  </channel>
-</rss>
+version https://git-lfs.github.com/spec/v1
+oid sha256:0baa75c5f48e09a19fd28016bb5d3c996a8788d2842dd5961a9e1682acb9a829
+size 1214
